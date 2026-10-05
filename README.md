@@ -12,5 +12,5 @@ Branch 選 `main`、資料夾 `/ (root)`，存檔。一兩分鐘後上面的網�
 ## 改內容
 
 App 裡（`雀翎傳說` 的「玩法說明 → 關於與隱私」分頁）有一份一模一樣的文字，
-改這裡要一起改那邊（主 repo `entry/src/main/ets/pages/GuidePage.ets` 的 `aboutTab`），
-生效日也要同步。
+改這裡要一起改那邊（主 repo `entry/src/main/ets/common/GuideContent.ets` 的 `PRIVACY_PARAS`，
+鴻蒙版與 Web 版共用那一份），生效日（`PRIVACY_DATE`）也要同步。
