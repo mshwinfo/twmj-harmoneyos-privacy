@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>雀翎傳說 隱私聲明</title>
+  <!-- 由 twmj-harmoneyos 的 tools/gen-privacy-page.mjs 產生，內容與 App 內的隱私聲明一致；不要在這裡手改 -->
   <style>
     :root { color-scheme: light dark; }
     body { font-family: system-ui, -apple-system, "Noto Sans TC", "PingFang TC", sans-serif;
@@ -11,8 +12,10 @@
     h1 { font-size: 1.6rem; margin-bottom: 0; }
     .meta { color: #777; margin-top: 4px; }
     h2 { font-size: 1.15rem; margin-top: 2rem; }
+    .zh p { margin: 0.8em 0; }
     ol { padding-left: 1.4em; }
     li { margin: 0.6em 0; }
+    a { word-break: break-all; }
     code { background: rgba(127,127,127,0.15); padding: 1px 5px; border-radius: 4px; }
     hr { border: 0; border-top: 1px solid rgba(127,127,127,0.35); margin: 2.5rem 0; }
     .en { color: #555; }
@@ -21,32 +24,41 @@
 </head>
 <body>
   <h1>雀翎傳說 隱私聲明</h1>
-  <p class="meta">生效日：2026-10-05 · 應用程式：雀翎傳說（台灣十六張麻將）· 套件名稱 <code>net.csinno.twmj</code></p>
+  <p class="meta">生效日：2026-10-13 · 應用程式：雀翎傳說（台灣十六張麻將）· 套件名稱 <code>net.csinno.twmj</code></p>
 
-  <ol>
-    <li><strong>單機遊玩不連網，不收集任何個人資料。</strong>段位、雀翎養成、規則設定、牌譜與音量只存在你的裝置本機（應用程式私有空間），移除 App 即一併刪除。</li>
-    <li><strong>連線對戰（僅含此功能的版本）：</strong>只有在你按下「連線」時，App 才會連到你選的伺服器（預設是我們架設的官方伺服器，也可以在「進階」填自己架的），傳送你填的暱稱、選用的助陣雀翎與牌局動作（打牌、吃碰槓胡、技能），並收到牌局狀態。官方伺服器的連線經由 Cloudflare 的網路轉送（提供加密與防護），傳輸過程中的資料（含來源位址）由 Cloudflare 依其隱私政策處理。伺服器不建立帳號、不保存牌局，連線紀錄（來源位址、暱稱、時間）只用於除錯並會定期覆寫，不與第三方分享；重連用的票根只存在本機。</li>
-    <li><strong>不使用第三方 SDK</strong>，沒有廣告、沒有分析追蹤，不取得裝置識別碼，不讀取通訊錄、位置、相機或麥克風。</li>
-    <li><strong>權限：</strong>單機版不要求任何權限；連線版只要求網路權限（<code>ohos.permission.INTERNET</code>）。</li>
-    <li>本遊戲不涉及真實金錢，不針對兒童收集資料。</li>
-    <li>本聲明若有變更會在本頁更新；聯絡方式見應用商店頁面的開發者資訊。</li>
-  </ol>
+  <div class="zh">
+    <p>一、單機遊玩不連網，不收集任何個人資料。段位、雀翎養成與珍藏、規則與各項設定、牌譜都只存在你的裝置本機（App 的私有空間；Web 版是瀏覽器的本機儲存），我們收不到；移除 App（Web 版清除網站資料）即一併刪除。</p>
+    <p>二、存檔備份與存圖只在你自己按下時才做：「備份到剪貼簿」把存檔變成一段文字放進剪貼簿；「存成檔案」與保存珍藏插圖時，由系統的儲存視窗或分享畫面讓你自己選放哪裡；「從檔案讀進來」只讀你在系統選擇器裡選的那一個檔。App 不會自己讀取你的相簿、檔案或剪貼簿。</p>
+    <p>三、連線對戰（僅含此功能的版本，要先同意本聲明才能使用）：打開「連線對戰」時，App 會向你選的伺服器（預設是我們架設的官方伺服器，也可以在「進階」填自己架的）詢問是否在線與線上人數，不送出個人資料；按下「連線」後才傳送你填的暱稱、你開的房間名稱、選用的助陣雀翎與牌局動作（打牌、吃碰槓胡、技能、託管），並收到牌局狀態。暱稱與房間名稱會顯示給同一台伺服器上的其他玩家，請不要填真實姓名等個人資料。重連用的票根只存在你的裝置。</p>
+    <p>四、官方伺服器的連線經由 Cloudflare 的網路轉送（提供加密與防護），傳輸中的資料（含來源 IP 位址）由 Cloudflare 依其隱私政策處理。伺服器不建立帳號、不保存牌局；連線紀錄（來源 IP 位址、暱稱、房間名稱、時間）只用於除錯與防止濫用，存在伺服器的日誌裡、滿了自動覆寫（總量約 30 MB），不與第三方分享、不用於其他目的。</p>
+    <p>五、Web 版從網站載入遊戲時，網站伺服器（同樣經 Cloudflare 轉送）會留下一般的存取紀錄（來源 IP 位址、瀏覽器資訊、時間、要求的檔案），只用於維運，同樣自動覆寫。Android 版的存檔可能隨系統的備份功能存進你自己的 Google 帳號，是否備份由你的系統設定決定，我們拿不到這份備份。</p>
+    <p>六、沒有廣告、分析、追蹤或當機回報等會收集資料的第三方 SDK（Android 版以開源的 Capacitor 框架包裝，它不收集資料），不取得裝置識別碼，不讀取通訊錄、位置、相機或麥克風。</p>
+    <p>七、權限：鴻蒙版要求震動權限（ohos.permission.VIBRATE，摸牌、打牌、胡牌時的震動回饋，可在規則設定關閉）；含連線對戰的版本另要求網路權限（ohos.permission.INTERNET，只用於連線對戰）。兩者都是安裝時由系統授予、不會跳出詢問的權限。Android 版同樣只有震動與網路兩項。</p>
+    <p>八、本遊戲不涉及真實金錢：沒有付費、儲值或抽卡，牌局分數與段位積分不能兌換任何財物。本遊戲不以兒童為對象，也不收集兒童的資料。</p>
+    <p>九、你的權利：單機資料都在你的裝置上，由你自己保管與刪除；連線用的暱稱可以隨時更改，伺服器的紀錄會自動覆寫。對本聲明或資料處理有任何疑問，或要查詢、刪除伺服器上的紀錄，請透過下面的聯絡方式告訴我們。</p>
+    <p>十、本聲明若有變更，會更新本頁與 App 內的內容並更改生效日，App 會在下次開啟時再請你確認。聯絡方式：<a href="https://github.com/mshwinfo/twmj-harmoneyos-privacy/issues">https://github.com/mshwinfo/twmj-harmoneyos-privacy/issues</a>（開發者資訊另見應用商店頁面）。</p>
+  </div>
 
   <h2>素材與程式</h2>
   <p>規則核心、房間與伺服器為自製程式，版權所有。雀翎語音以 Azure Speech 合成，音效以 ElevenLabs 產生，背景音樂為程式作曲，立繪與圖示由專案的產生工具產生。</p>
 
   <hr>
 
-  <h2 class="en">Privacy Policy (English summary)</h2>
+  <h2 class="en">Privacy Policy (English translation)</h2>
   <div class="en">
-    <p><strong>Legend of Queling</strong> (Taiwanese 16-tile mahjong), package <code>net.csinno.twmj</code>. Effective 2026-10-05.</p>
+    <p><strong>Legend of Queling</strong> (Taiwanese 16-tile mahjong), package <code>net.csinno.twmj</code>. Effective 2026-10-13.
+    The Chinese text above is the authoritative version.</p>
     <ol>
-      <li>Offline play never connects to the network and collects no personal data. Rank, companion progress, rule settings, replays and volume are stored only on your device (app-private storage) and are deleted when the app is uninstalled.</li>
-      <li>Online play (builds that include it) connects only after you tap “Connect”, to the server you picked: by default our official server, or one you host yourself (entered under “Advanced”). It sends the nickname you typed, your chosen companion and your in-game actions, and receives game state. Connections to the official server are relayed through Cloudflare’s network (for encryption and protection); data in transit, including the source address, is processed by Cloudflare under its privacy policy. The server keeps no accounts and stores no games; connection logs (source address, nickname, time) are used only for debugging, are rotated regularly and are not shared with third parties. The reconnect token stays on your device.</li>
-      <li>No third-party SDKs, no ads, no analytics, no device identifiers, no access to contacts, location, camera or microphone.</li>
-      <li>Permissions: the offline build requests none; the online build requests network access (<code>ohos.permission.INTERNET</code>) only.</li>
-      <li>No real money is involved and no data is collected from children.</li>
-      <li>Changes will be posted on this page. Contact details are on the app store listing.</li>
+      <li>Offline play never connects to the network and collects no personal data. Rank, companion progress and keepsakes, rules and settings, and replays are stored only on your device (the app’s private storage; in the web version, the browser’s local storage). We never receive them. Uninstalling the app (or clearing the site data in the web version) deletes them.</li>
+      <li>Backups and image saving happen only when you tap them: “Back up to clipboard” puts your save on the clipboard as a block of text; “Save as file” and saving keepsake art let you choose where to save through the system’s save dialog or share sheet; “Load from file” reads only the one file you pick in the system picker. The app never reads your photos, files or clipboard on its own.</li>
+      <li>Online play (only in builds that include it, and only after you accept this policy): when you open “Online”, the app asks the server you chose (by default our official server, or one you host yourself, entered under “Advanced”) whether it is up and how many players are on, without sending any personal data. Only after you tap “Connect” does it send the nickname you typed, the names of rooms you create, your chosen companion and your game actions (discards, chow/pung/kong/win, skills, auto-play), and receive the game state. Nicknames and room names are shown to other players on the same server, so please don’t use your real name or other personal information. The reconnect token stays on your device.</li>
+      <li>Connections to the official server are relayed through Cloudflare’s network (for encryption and protection); data in transit, including your IP address, is processed by Cloudflare under its privacy policy. The server keeps no accounts and stores no games. Connection logs (IP address, nickname, room name, time) are used only for debugging and abuse prevention, are kept in the server’s log files and overwritten automatically when full (about 30 MB in total), and are neither shared with third parties nor used for any other purpose.</li>
+      <li>When the web version is loaded from our website, the web server (also behind Cloudflare) keeps ordinary access logs (IP address, browser information, time, requested files), used only for operations and overwritten automatically as well. On Android, your save data may be included in the system backup to your own Google account, depending on your system settings; we cannot access that backup.</li>
+      <li>No third-party SDKs that collect data — no ads, analytics, tracking or crash reporting (the Android version is packaged with the open-source Capacitor framework, which collects no data). No device identifiers, and no access to contacts, location, camera or microphone.</li>
+      <li>Permissions: the HarmonyOS version requests vibration (ohos.permission.VIBRATE, for haptic feedback when you draw, discard or win; it can be turned off in Rules); builds with online play also request network access (ohos.permission.INTERNET, used only for online play). Both are granted by the system at install time without a prompt. The Android version likewise requests only vibration and network access.</li>
+      <li>No real money is involved: no purchases, top-ups or gacha, and game scores and rank points cannot be exchanged for anything of value. The game is not directed at children and collects no data from children.</li>
+      <li>Your rights: offline data stays on your device, under your control. You can change your online nickname at any time, and server logs are overwritten automatically. If you have questions about this policy or how data is handled, or want to ask about or delete server logs, contact us below.</li>
+      <li>If this policy changes, we will update this page and the in-app text and change the effective date; the app will ask you to confirm again the next time you open it. Contact: <a href="https://github.com/mshwinfo/twmj-harmoneyos-privacy/issues">https://github.com/mshwinfo/twmj-harmoneyos-privacy/issues</a> (developer information is also on the app store listing).</li>
     </ol>
   </div>
 </body>
